@@ -1,0 +1,68 @@
+<html>
+
+<body>
+
+<script type="text/javascript">
+
+<!--
+
+var chave=prompt("Digite o valor da chave")
+var texto=prompt("Digite a mensagem")
+c=chave.length
+l=texto.length
+cont=0
+contchave=0
+x=-1
+y=0
+k=-1
+j=0
+var alfanumerico="0123456789aAbBcCdDeEfFgGhHiIjJlLmMnNoOpPqQrRsStTuUvVxXzZ "
+
+while (cont<l)
+{
+  if (contchave<c)
+  {
+    x++
+    y++
+    cont++
+    m=texto.substring(x,y)
+  
+    pos = alfanumerico.indexOf(m)
+    k++
+    j++
+    contchave++
+    nchave = chave.substring(k,j)
+    nchave = alfanumerico.indexOf(nchave)
+    pos = pos+nchave
+    
+    if (pos < 10)
+    {
+      pos = "00" + pos
+    }
+    else
+    {
+      if (pos < 100)
+      {
+        pos = "0" + pos
+      }
+      else
+      {
+      }
+    } 
+
+    document.write(pos)
+    //document.write("<br>")
+  }
+   else
+  {
+    contchave=0
+    k=-1
+    j=0
+  } 
+}
+
+-->
+
+</script>
+</body>
+</html>

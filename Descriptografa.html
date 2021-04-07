@@ -1,0 +1,59 @@
+<html>
+
+<body>
+
+<script type="text/javascript">
+
+<!--
+
+var chave= prompt("Digite o valor da chave")
+var texto= prompt("Digite o código")
+qchave = chave.length
+qtexto = texto.length
+qtexto = qtexto/3
+alfanumerico="0123456789aAbBcCdDeEfFgGhHiIjJlLmMnNoOpPqQrRsStTuUvVxXzZ "
+x=-3
+y=-2
+z=-1
+f=-1
+cont = 0
+contchave = 0
+
+while (cont<qtexto)
+{
+  if (contchave<qchave)
+  {
+    cont++
+    contchave++
+    x+=3
+    y+=3
+    z+=3
+    m=texto.charAt(x)
+    n=texto.charAt(y)
+    o=texto.charAt(z)
+
+    l = m+n+o
+    h = l++
+
+    f++
+    charchave = chave.charAt(f)
+    poschave = alfanumerico.indexOf(charchave)
+
+    descr = h-poschave
+    descr = alfanumerico.charAt(descr)
+
+    document.write(descr)
+  }
+   else
+  {
+    contchave=0
+    f=-1
+  }
+}
+-->
+
+</script>
+
+</body>
+
+<html>
