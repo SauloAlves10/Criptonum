@@ -1,68 +1,62 @@
-<html>
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Criptonum - Criptografa</title>
+</head>
 
 <body>
 
-<script type="text/javascript">
+  <script type="text/javascript">
+    var chave = prompt("Digite o valor da chave")
+    var texto = prompt("Digite a mensagem")
+    c = chave.length
+    l = texto.length
+    cont = 0
+    contchave = 0
+    x = -1
+    y = 0
+    k = -1
+    j = 0
+    var alfanumerico = "0123456789aáàâAÁÀÂbBcCçÇdDeéèêEÉÈÊfFgGhHiíIÍjJkKlLmMnNoóòôöOÓÒÔÖpPqQrRsStTuúùüUÚÙÜvVxXzZ!?,.:;\/*-+=<>@#$%&*()[]{}|_'' "
 
-<!--
+    while (cont < l) {
+      if (contchave < c) {
+        x++
+        y++
+        cont++
+        m = texto.substring(x, y)
 
-var chave=prompt("Digite o valor da chave")
-var texto=prompt("Digite a mensagem")
-c=chave.length
-l=texto.length
-cont=0
-contchave=0
-x=-1
-y=0
-k=-1
-j=0
-var alfanumerico="0123456789aAbBcCdDeEfFgGhHiIjJlLmMnNoOpPqQrRsStTuUvVxXzZ "
+        pos = alfanumerico.indexOf(m)
+        k++
+        j++
+        contchave++
+        nchave = chave.substring(k, j)
+        nchave = alfanumerico.indexOf(nchave)
+        pos = pos + nchave
 
-while (cont<l)
-{
-  if (contchave<c)
-  {
-    x++
-    y++
-    cont++
-    m=texto.substring(x,y)
-  
-    pos = alfanumerico.indexOf(m)
-    k++
-    j++
-    contchave++
-    nchave = chave.substring(k,j)
-    nchave = alfanumerico.indexOf(nchave)
-    pos = pos+nchave
-    
-    if (pos < 10)
-    {
-      pos = "00" + pos
+        if (pos < 10) {
+          pos = "00" + pos
+        } else {
+          if (pos < 100) {
+            pos = "0" + pos
+          }
+        }
+
+        document.write(pos)
+        //document.write("<br>")
+      } else {
+        contchave = 0
+        k = -1
+        j = 0
+      }
     }
-    else
-    {
-      if (pos < 100)
-      {
-        pos = "0" + pos
-      }
-      else
-      {
-      }
-    } 
 
-    document.write(pos)
-    //document.write("<br>")
-  }
-   else
-  {
-    contchave=0
-    k=-1
-    j=0
-  } 
-}
+  </script>
 
--->
-
-</script>
 </body>
+
 </html>
