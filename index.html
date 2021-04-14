@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <script src="criptografar.js"></script>
+    <script src="descriptografar.js"></script>
+    <title>Criptonum</title>
+
+</head>
+
+<body>
+    <div id="titulo">CriptoNum</div>
+    <div id="principal">
+        <div id="criptografia">
+            <h1>Criptografa &#128274</h1>
+
+            <p>Digite o valor da chave: <input id="cchave" type="text"></p>
+            <p>Digite a mensagem: </p>
+            <p><textarea id="cmensagem" rows="8" cols="43" maxlength="500"></textarea></p>
+            <p><input class="cd-btn" type="button" onclick="criptografar()" value="Criptografar"></p>
+            <p>Mensagem criptografada: </p>
+            <p><textarea id="ccriptomensagem" rows="8" cols="43" maxlength="500" disabled></textarea></p>
+        </div>
+        
+        <div id="descriptografia">
+            <h1>Descriptografa &#128275</h1>
+
+            <p>Digite o valor da chave: <input id="dchave" type="text"></p>
+            <p>Digite a mensagem criptografada:</p>
+            <p><textarea id="dmensagem" rows="8" cols="43" maxlength="1000"></textarea></p>
+            <p><input class="cd-btn" type="button" onclick="descriptografar()" value="Descriptografar"></p>
+            <p>Mensagem descriptografada: </p>
+            <p><textarea id="dcriptomensagem" rows="8" cols="43" maxlength="500" disabled></textarea></p>
+        </div>
+    </div>
+</body>
+
+</html>

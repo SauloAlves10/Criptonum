@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+body {
+	margin: auto;
+	width: 800px;
+	font-family: Arial, Helvetica, sans-serif;
+    background-color: #FFF8F0;
+}
+
+textarea {
+    resize: none;
+}
+
+.cd-btn {
+    width: 150px;
+}
+
+#titulo {
+    text-align: center;
+    font-size: 5em;
+    margin: 20px;
+    margin-bottom: 30px;
+    color: #392F5A;
+    text-shadow: 3px 5px 0px #F4D06F;
+    font-weight: bolder;
+}
+
+#principal {
+    text-align: center;
+}
+
+#criptografia {
+    display: inline-block;
+    margin-right: 40px;
+    padding: 20px;
+    background-color: #F4D06F;
+    color:#392F5A;
+    border-radius: 30px;
+}
+
+#descriptografia {
+    display: inline-block;
+    background-color: #392F5A;
+    color: #F4D06F;
+    padding: 20px;
+    border-radius: 20px;
+}
