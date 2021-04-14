@@ -16,7 +16,7 @@ function criptografar() {
         let y = 0
         let k = -1
         let j = 0
-        let alfanumerico = "0123456789aáàâAÁÀÂbBcCçÇdDeéèêEÉÈÊfFgGhHiíIÍjJkKlLmMnNoóòôöOÓÒÔÖpPqQrRsStTuúùüUÚÙÜvVxXzZ!?,.:;\/*-+=<>@#$%&*()[]{}|_'' "
+        let alfanumerico = "0123456789aáàâãAÁÀÂÃbBcCçÇdDeéèêEÉÈÊfFgGhHiíIÍjJkKlLmMnNoóòôõöOÓÒÔÕÖpPqQrRsStTuúùüUÚÙÜvVxXzZ!?,.:;\/*-+=<>@#$%&*()[]{}|_'' "
 
         while (cont < l) {
             if (contchave < c) {
