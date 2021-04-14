@@ -11,7 +11,7 @@ function descriptografar() {
         let qchave = chave.length
         let qtexto = texto.length
         qtexto = qtexto / 3
-        let alfanumerico = "0123456789aáàâAÁÀÂbBcCçÇdDeéèêEÉÈÊfFgGhHiíIÍjJkKlLmMnNoóòôöOÓÒÔÖpPqQrRsStTuúùüUÚÙÜvVxXzZ!?,.:;\/*-+=<>@#$%&*()[]{}|_'' "
+        let alfanumerico = "0123456789aáàâãAÁÀÂÃbBcCçÇdDeéèêEÉÈÊfFgGhHiíIÍjJkKlLmMnNoóòôõöOÓÒÔÕÖpPqQrRsStTuúùüUÚÙÜvVxXzZ!?,.:;\/*-+=<>@#$%&*()[]{}|_'' "
         let x = -3
         let y = -2
         let z = -1
