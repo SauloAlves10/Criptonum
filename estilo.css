@@ -7,15 +7,7 @@ body {
     background-color: #FFF8F0;
 }
 
-textarea {
-    resize: none;
-}
-
-.cd-btn {
-    width: 150px;
-}
-
-#titulo {
+header {
     text-align: center;
     font-size: 5em;
     margin: 20px;
@@ -25,8 +17,21 @@ textarea {
     font-weight: bolder;
 }
 
-#principal {
+main {
     text-align: center;
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    color: #F4D06F;
+    background-color: #392F5A;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+textarea {
+    resize: none;
 }
 
 #criptografia {
@@ -43,5 +48,9 @@ textarea {
     background-color: #392F5A;
     color: #F4D06F;
     padding: 20px;
-    border-radius: 20px;
+    border-radius: 30px;
+}
+
+.cd-btn {
+    width: 150px;
 }
